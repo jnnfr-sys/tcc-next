@@ -1,4 +1,7 @@
+import Image from 'next/image';
+
 import style from './page.module.css';
+
 export default function Home () {
   return(
     <div className="container">
@@ -10,7 +13,22 @@ export default function Home () {
       <small>Texto menor</small>
       <br />
       <div className="quadrado"></div>
+
+      <Image 
+        src={'/temp/arvore.jpg'}
+        alt="Picture of the author"
+        width={130}
+        height={90}
+      />
+
+      <Image 
+        src={'/temp/arvorePequena.jpg'}
+        alt="Árvore pequena"
+        width={1300}
+        height={900}
+      />
     </div>
+
 
    
   );
